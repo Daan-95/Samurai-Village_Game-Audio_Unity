@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class TheLeekQuest : MonoBehaviour
 {
@@ -44,7 +45,8 @@ public class TheLeekQuest : MonoBehaviour
             pressToTalkUI.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
-                //Add your conversation here
+                // Play FMOD sound event
+                RuntimeManager.PlayOneShot("event:/LEEK Quest");
 
                 questStarted = true;
                 pressToTalkUI.SetActive(false);
@@ -77,6 +79,10 @@ public class TheLeekQuest : MonoBehaviour
             pressToGiveUI.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+
+                // Play FMOD sound event
+                RuntimeManager.PlayOneShot("event:/LEEK Thanks");
+
                 doesPlayerHaveLeek = false;
                 pressToGiveUI.SetActive(false);
                 leekToGive.SetActive(true);

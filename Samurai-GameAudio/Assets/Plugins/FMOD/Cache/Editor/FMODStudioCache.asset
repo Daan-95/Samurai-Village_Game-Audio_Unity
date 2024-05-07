@@ -1,5 +1,59 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6402495812400300285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LEEK Quest
+  m_EditorClassIdentifier: 
+  Path: event:/LEEK Quest
+  Guid:
+    Data1: 272799393
+    Data2: 1218427776
+    Data3: 20576925
+    Data4: -1084784368
+  Banks:
+  - {fileID: 6263933039273773256}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
+--- !u!114 &-2889269776058631248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LEEK Thanks
+  m_EditorClassIdentifier: 
+  Path: event:/LEEK Thanks
+  Guid:
+    Data1: -312842988
+    Data2: 1298571341
+    Data3: -796189764
+    Data4: 2079212139
+  Banks:
+  - {fileID: 6263933039273773256}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
 --- !u!114 &-593145767144485223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +69,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638507099794162755
+  lastModified: 638507170644686964
   FileSizes:
   - Name: Desktop
-    Value: 900
+    Value: 1042
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -36,14 +90,17 @@ MonoBehaviour:
   - {fileID: -593145767144485223}
   - {fileID: 8184588213283164510}
   - {fileID: 2832502383013957592}
+  - {fileID: 6263933039273773256}
   EditorEvents:
   - {fileID: 5319711458385117281}
+  - {fileID: -6402495812400300285}
+  - {fileID: -2889269776058631248}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638507106909718718
+  cacheTime: 638507170645891739
   cacheVersion: 131617
 --- !u!114 &2832502383013957592
 MonoBehaviour:
@@ -60,7 +117,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638507099794142781
+  lastModified: 638507170644656980
   FileSizes:
   - Name: Desktop
     Value: 1194
@@ -93,6 +150,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6263933039273773256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/LEEK QUEST.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Samurai Village Fmod/Build/Desktop/LEEK QUEST.bank
+  Name: LEEK QUEST
+  StudioPath: bank:/LEEK QUEST
+  lastModified: 638507170645891739
+  FileSizes:
+  - Name: Desktop
+    Value: 54528
+  Exists: 1
 --- !u!114 &7114710699892013746
 MonoBehaviour:
   m_ObjectHideFlags: 0
