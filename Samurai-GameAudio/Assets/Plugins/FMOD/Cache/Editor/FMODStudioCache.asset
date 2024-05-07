@@ -100,7 +100,7 @@ MonoBehaviour:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638507170645891739
+  cacheTime: 638507233503098676
   cacheVersion: 131617
 --- !u!114 &2832502383013957592
 MonoBehaviour:
@@ -216,8 +216,8 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FOOTSTEPS.bank
   Name: FOOTSTEPS
   StudioPath: bank:/FOOTSTEPS
-  lastModified: 638507106909718718
+  lastModified: 638507233503098676
   FileSizes:
   - Name: Desktop
-    Value: 43552
+    Value: 68608
   Exists: 1
