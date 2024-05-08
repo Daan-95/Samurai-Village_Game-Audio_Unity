@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8838077142716404355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ITEM PROXIMITY
+  m_EditorClassIdentifier: 
+  Path: event:/ITEM PROXIMITY
+  Guid:
+    Data1: 318331444
+    Data2: 1153053661
+    Data3: -445853505
+    Data4: 1044899694
+  Banks:
+  - {fileID: 8184588213283164510}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23244
 --- !u!114 &-6402495812400300285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +81,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &-707120665156294744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PROXIMITY.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Samurai Village Fmod/Build/Desktop/PROXIMITY.bank
+  Name: PROXIMITY
+  StudioPath: bank:/ITEMS/PROXIMITY
+  lastModified: 638507267891258103
+  FileSizes:
+  - Name: Desktop
+    Value: 494
+  Exists: 1
 --- !u!114 &-593145767144485223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69,10 +116,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638507170644686964
+  lastModified: 638507287330296892
   FileSizes:
   - Name: Desktop
-    Value: 1042
+    Value: 1172
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -91,16 +138,18 @@ MonoBehaviour:
   - {fileID: 8184588213283164510}
   - {fileID: 2832502383013957592}
   - {fileID: 6263933039273773256}
+  - {fileID: -707120665156294744}
   EditorEvents:
   - {fileID: 5319711458385117281}
   - {fileID: -6402495812400300285}
   - {fileID: -2889269776058631248}
+  - {fileID: -8838077142716404355}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638507233503098676
+  cacheTime: 638507287330296892
   cacheVersion: 131617
 --- !u!114 &2832502383013957592
 MonoBehaviour:
@@ -117,10 +166,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638507170644656980
+  lastModified: 638507287330266909
   FileSizes:
   - Name: Desktop
-    Value: 1194
+    Value: 1452
   Exists: 1
 --- !u!114 &5319711458385117281
 MonoBehaviour:
@@ -165,7 +214,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/LEEK QUEST.bank
   Name: LEEK QUEST
   StudioPath: bank:/LEEK QUEST
-  lastModified: 638507170645891739
+  lastModified: 638507287330166963
   FileSizes:
   - Name: Desktop
     Value: 54528
@@ -216,8 +265,8 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FOOTSTEPS.bank
   Name: FOOTSTEPS
   StudioPath: bank:/FOOTSTEPS
-  lastModified: 638507233503098676
+  lastModified: 638507286289275410
   FileSizes:
   - Name: Desktop
-    Value: 68608
+    Value: 140192
   Exists: 1

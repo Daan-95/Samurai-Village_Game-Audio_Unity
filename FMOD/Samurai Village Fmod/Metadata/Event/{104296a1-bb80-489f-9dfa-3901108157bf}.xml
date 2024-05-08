@@ -5,7 +5,7 @@
 			<value>LEEK Quest</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{1aee8bd5-8b67-4113-8df0-974f06c2a342}</destination>
@@ -114,9 +114,17 @@
 		<relationship name="effects">
 			<destination>{02375846-e954-4d4e-b877-6178165acd7b}</destination>
 			<destination>{383fe78e-47fa-4969-a9fe-07ea99f42fac}</destination>
+			<destination>{c48a1be6-7463-4421-a3c1-65f4bbf5545e}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{aa9077b3-dbb1-4a2f-b312-0924a3072787}" />
+	<object class="MixerBusPanner" id="{aa9077b3-dbb1-4a2f-b312-0924a3072787}">
+		<property name="surroundPanDirection">
+			<value>-4.23639488</value>
+		</property>
+		<property name="surroundPanExtent">
+			<value>97.7490387</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{46a27ad9-cff9-49c5-94fb-94dcd340fba0}" />
 	<object class="MixerBusEffectChain" id="{b0718f43-2f35-42ca-b829-eb0ae020892d}">
 		<relationship name="effects">
@@ -143,6 +151,7 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{383fe78e-47fa-4969-a9fe-07ea99f42fac}" />
+	<object class="SpatialiserEffect" id="{c48a1be6-7463-4421-a3c1-65f4bbf5545e}" />
 	<object class="MultibandEqEffect" id="{d0c53cb8-3745-4e54-8a84-dcdecca587d5}">
 		<property name="filterTypeB">
 			<value>6</value>

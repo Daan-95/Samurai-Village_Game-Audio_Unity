@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{03d81874-7f50-4580-ab11-0f92ea00e96b}">
+		<property name="name">
+			<value>PROXIMITY</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b1c494f0-a9da-4bc3-b2f8-7fec74179b2e}</destination>
+		</relationship>
+	</object>
+</objects>
