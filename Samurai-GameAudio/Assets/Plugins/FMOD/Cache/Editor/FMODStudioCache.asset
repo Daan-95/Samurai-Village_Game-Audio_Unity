@@ -116,7 +116,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638507287330296892
+  lastModified: 638507715860820855
   FileSizes:
   - Name: Desktop
     Value: 1172
@@ -149,7 +149,7 @@ MonoBehaviour:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638507287330296892
+  cacheTime: 638507738348832632
   cacheVersion: 131617
 --- !u!114 &2832502383013957592
 MonoBehaviour:
@@ -166,7 +166,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638507287330266909
+  lastModified: 638507715860790875
   FileSizes:
   - Name: Desktop
     Value: 1452
@@ -265,8 +265,8 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FOOTSTEPS.bank
   Name: FOOTSTEPS
   StudioPath: bank:/FOOTSTEPS
-  lastModified: 638507286289275410
+  lastModified: 638507738348832632
   FileSizes:
   - Name: Desktop
-    Value: 140192
+    Value: 197088
   Exists: 1

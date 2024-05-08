@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{6b1e9b0e-9d5f-437f-ad61-c00ac7d1ef23}">
+		<property name="assetPath">
+			<value>FOOTSTEPS/GRASS/GRASS-005.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.27004535147392289</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6bf31780-b44f-44f2-9da0-9e8c76c21ab6}</destination>
+		</relationship>
+	</object>
+</objects>
