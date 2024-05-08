@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000029621D0F758 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000018A91FAD1C8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -19,98 +19,6 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] SoundI::release                          :  (000002957C9A66A8)
-[LOG] SoundI::release                          :     Stone-003 (000002965C845AB8)
-[LOG] SoundI::release                          :  (00000293A0A155E8)
-[LOG] SoundI::release                          :     Stone-002 (00000293A4855618)
-[LOG] SoundI::release                          :  (00000293A0A14788)
-[LOG] SoundI::release                          :     Stone-005 (00000293A4852D78)
-[LOG] SoundI::release                          :  (000002957C9A70B8)
-[LOG] SoundI::release                          :     Stone-006 (000002965C8474B8)
-[LOG] SoundI::release                          :  (000002957C9A7AC8)
-[LOG] SoundI::release                          :     Stone-004 (000002965C847658)
-[LOG] SoundI::release                          :  (00000293A0A15028)
-[LOG] SoundI::release                          :     Stone-001 (00000293A48533F8)
-[LOG] SoundI::release                          :  (00000293A0A15478)
-[LOG] SoundI::release                          :     DIRT-001 (00000293A48540F8)
-[LOG] SoundI::release                          :  (00000293AC8C74F8)
-[LOG] SoundI::release                          :     DIRT-005 (00000293AC547088)
-[LOG] SoundI::release                          :  (00000293AC8C7218)
-[LOG] SoundI::release                          :     DIRT-002 (00000293AC546D48)
-[LOG] SoundI::release                          :  (00000293A0A15308)
-[LOG] SoundI::release                          :     DIRT-003 (00000293A48545D8)
-[LOG] SoundI::release                          :  (00000293A0A13D78)
-[LOG] SoundI::release                          :     DIRT-006 (00000293A48530B8)
-[LOG] SoundI::release                          :  (00000293A0A15198)
-[LOG] SoundI::release                          :     DIRT-004 (00000293A4854918)
-[LOG] SoundI::release                          :  (00000293AC8C60D8)
-[LOG] SoundI::release                          :     SAND-001 (00000293AC5473C8)
-[LOG] SoundI::release                          :  (00000293A5D29D38)
-[LOG] SoundI::release                          :     SAND-002 (000002965C845DF8)
-[LOG] SoundI::release                          :  (00000293A5D2AB98)
-[LOG] SoundI::release                          :     SAND-003 (000002965C845298)
-[LOG] SoundI::release                          :  (00000293A0A14618)
-[LOG] SoundI::release                          :     SAND-004 (00000293A4852898)
-[LOG] SoundI::release                          :  (00000293A0A14EB8)
-[LOG] SoundI::release                          :     SAND-005 (00000293A4855AF8)
-[LOG] SoundI::release                          :  (000002957C9A6F48)
-[LOG] SoundI::release                          :     SAND-006 (000002965C847B38)
-[LOG] SoundI::release                          :  (000002957C9A6988)
-[LOG] SoundI::release                          :     SAND-007 (000002965C8477F8)
-[LOG] SoundI::release                          :  (000002957C9A6538)
-[LOG] SoundI::release                          :     GRASS-001 (000002965C847E78)
-[LOG] SoundI::release                          :  (00000293AC8C6808)
-[LOG] SoundI::release                          :     GRASS-002 (00000293A4854AB8)
-[LOG] SoundI::release                          :  (00000293AC8C6C58)
-[LOG] SoundI::release                          :     GRASS-003 (00000293AC547D88)
-[LOG] SoundI::release                          :  (000002957C9A7C38)
-[LOG] SoundI::release                          :     GRASS-004 (000002965C844DB8)
-[LOG] SoundI::release                          :  (00000293A0A13C08)
-[LOG] SoundI::release                          :     GRASS-005 (00000293A48557B8)
-[LOG] SoundI::release                          :  (00000293AC8C70A8)
-[LOG] SoundI::release                          :     GRASS-006 (00000293AC547A48)
-[LOG] SoundI::release                          :  (00000293AC8C6AE8)
-[LOG] SoundI::release                          :     GRASS-007 (00000293AC548748)
-[LOG] SoundI::release                          :  (00000293A0A13EE8)
-[LOG] SoundI::release                          :     GRASS-008 (00000293A4853598)
-[LOG] SoundI::release                          :  (00000293AC8C6698)
-[LOG] SoundI::release                          :     WOOD-001 (00000293AC547F28)
-[LOG] SoundI::release                          :  (00000293A0A13A98)
-[LOG] SoundI::release                          :     WOOD-002 (00000293A4854778)
-[LOG] SoundI::release                          :  (00000293A0A14BD8)
-[LOG] SoundI::release                          :     WOOD-003 (00000293A4852218)
-[LOG] SoundI::release                          :  (00000293A0A148F8)
-[LOG] SoundI::release                          :     WOOD-004 (00000293A4852F18)
-[LOG] SoundI::release                          :  (000002957C9A81F8)
-[LOG] SoundI::release                          :     WOOD-005 (000002965C845918)
-[LOG] SoundI::release                          :  (00000293AC8C63B8)
-[LOG] SoundI::release                          :     WOOD-006 (00000293AC547BE8)
-[LOG] SoundI::release                          :  (00000293AC8C6528)
-[LOG] SoundI::release                          :     WOOD-007 (00000293AC546EE8)
-[LOG] SoundI::release                          :  (000002957C9A7F18)
-[LOG] SoundI::release                          :     Stone Tunnel-001 (000002965C8448D8)
-[LOG] SoundI::release                          :  (000002957C9A7DA8)
-[LOG] SoundI::release                          :     Stone Tunnel-002 (000002965C8467B8)
-[LOG] SoundI::release                          :  (000002957C9A6DD8)
-[LOG] SoundI::release                          :     Stone Tunnel-003 (000002965C844F58)
-[LOG] SoundI::release                          :  (00000293AC8C77D8)
-[LOG] SoundI::release                          :     Stone Tunnel-004 (00000293AC546BA8)
-[LOG] SoundI::release                          :  (00000293A0A14338)
-[LOG] SoundI::release                          :     Stone Tunnel-005 (00000293A48526F8)
-[LOG] SoundI::release                          :  (00000293A0A14A68)
-[LOG] SoundI::release                          :     Stone Tunnel-006 (00000293A4853738)
-[LOG] SoundI::release                          :  (00000293A0A158C8)
-[LOG] SoundI::release                          :     Item Proximity (00000293A4855C98)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
-[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 

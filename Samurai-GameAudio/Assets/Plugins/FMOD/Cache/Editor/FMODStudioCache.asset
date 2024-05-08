@@ -27,6 +27,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 23244
+--- !u!114 &-8341980343739215354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FOOTSTEPS/Move State
+  m_EditorClassIdentifier: 
+  Name: Move State
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1047714136
+    data2: 2326977374
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - RUN
+  - WALK
+  - CROUCH
+  Exists: 1
+--- !u!114 &-6956346560283951018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SOUNDTRACK AREAS
+  m_EditorClassIdentifier: 
+  Path: event:/SOUNDTRACK AREAS
+  Guid:
+    Data1: -171410084
+    Data2: 1100551471
+    Data3: -1280577641
+    Data4: -1680691263
+  Banks:
+  - {fileID: -1573995821109104458}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 28000
 --- !u!114 &-6402495812400300285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-5291194731209821806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move State
+  m_EditorClassIdentifier: 
+  Name: Move State
+  StudioPath: parameter:/Move State
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 1047714136
+    data2: 2326977374
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - RUN
+  - WALK
+  - CROUCH
+  Exists: 1
 --- !u!114 &-2889269776058631248
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +162,74 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3000
+--- !u!114 &-2813773595988311925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: parameter:/Volume
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 442642608
+    data2: 4048397441
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-2695785433233839821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/FOOTSTEPS/Volume
+  m_EditorClassIdentifier: 
+  Name: Volume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 442642608
+    data2: 4048397441
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1573995821109104458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SOUNDTRACK.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Samurai Village Fmod/Build/Desktop/SOUNDTRACK.bank
+  Name: SOUNDTRACK
+  StudioPath: bank:/SOUNDTRACK
+  lastModified: 638508110666956216
+  FileSizes:
+  - Name: Desktop
+    Value: 1407008
+  Exists: 1
 --- !u!114 &-707120665156294744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,10 +265,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638507715860820855
+  lastModified: 638508111987760748
   FileSizes:
   - Name: Desktop
-    Value: 1172
+    Value: 1530
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -139,18 +288,44 @@ MonoBehaviour:
   - {fileID: 2832502383013957592}
   - {fileID: 6263933039273773256}
   - {fileID: -707120665156294744}
+  - {fileID: 2007727277394098101}
+  - {fileID: -1573995821109104458}
   EditorEvents:
   - {fileID: 5319711458385117281}
   - {fileID: -6402495812400300285}
   - {fileID: -2889269776058631248}
   - {fileID: -8838077142716404355}
-  EditorParameters: []
+  - {fileID: 7475268944966595701}
+  - {fileID: -6956346560283951018}
+  EditorParameters:
+  - {fileID: -5291194731209821806}
+  - {fileID: -2813773595988311925}
   MasterBanks:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638507748424884332
+  cacheTime: 638508120028697362
   cacheVersion: 131617
+--- !u!114 &2007727277394098101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/FLAMES.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FLAMES.bank
+  Name: FLAMES
+  StudioPath: bank:/FLAMES
+  lastModified: 638508120028697362
+  FileSizes:
+  - Name: Desktop
+    Value: 1178144
+  Exists: 1
 --- !u!114 &2832502383013957592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,10 +341,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638507715860790875
+  lastModified: 638508111987730760
   FileSizes:
   - Name: Desktop
-    Value: 1452
+    Value: 2430
   Exists: 1
 --- !u!114 &5319711458385117281
 MonoBehaviour:
@@ -196,6 +371,8 @@ MonoBehaviour:
   IsOneShot: 1
   Parameters:
   - {fileID: 7114710699892013746}
+  - {fileID: -2695785433233839821}
+  - {fileID: -8341980343739215354}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -250,6 +427,33 @@ MonoBehaviour:
   - STONE_TUNNEL
   - WOOD
   Exists: 1
+--- !u!114 &7475268944966595701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FLAMES
+  m_EditorClassIdentifier: 
+  Path: event:/FLAMES
+  Guid:
+    Data1: -698667770
+    Data2: 1331959009
+    Data3: -2132626795
+    Data4: 816605454
+  Banks:
+  - {fileID: 2007727277394098101}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 17000
 --- !u!114 &8184588213283164510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,8 +469,8 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FOOTSTEPS.bank
   Name: FOOTSTEPS
   StudioPath: bank:/FOOTSTEPS
-  lastModified: 638507748424884332
+  lastModified: 638508110632236548
   FileSizes:
   - Name: Desktop
-    Value: 197088
+    Value: 197952
   Exists: 1

@@ -405,9 +405,11 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - FLAMES
   - FOOTSTEPS
   - LEEK QUEST
   - PROXIMITY
+  - SOUNDTRACK
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
