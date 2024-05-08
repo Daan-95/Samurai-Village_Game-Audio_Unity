@@ -133,6 +133,9 @@
 		<property name="pitch">
 			<value>1.20000005</value>
 		</property>
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{709c593c-c3af-4e35-ad53-b92b331f3d45}</destination>
 			<destination>{ff6f54e5-9213-4dc8-9eb1-51bba61f598f}</destination>
@@ -145,6 +148,9 @@
 	<object class="MultiSound" id="{bc64e1f0-8d25-4224-8e86-72067e2e1249}">
 		<property name="start">
 			<value>5</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{e243adaa-9364-4251-a9d6-469809950ac5}</destination>
@@ -159,6 +165,12 @@
 		<property name="start">
 			<value>6</value>
 		</property>
+		<property name="pitch">
+			<value>-1.20000005</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{c1b67af6-a5f1-45b4-bd51-490cca231463}</destination>
 			<destination>{fcd5dba7-2f06-4c1f-b59c-61474fd13606}</destination>
@@ -172,6 +184,12 @@
 	<object class="MultiSound" id="{8e238675-ce44-430e-ae6b-d80dcc838515}">
 		<property name="start">
 			<value>2</value>
+		</property>
+		<property name="pitch">
+			<value>-5.5</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{11a8ea24-8dea-4fef-a488-4767d41afd29}</destination>
@@ -188,6 +206,9 @@
 		</property>
 		<property name="volume">
 			<value>-3.5</value>
+		</property>
+		<property name="playlistMode">
+			<value>1</value>
 		</property>
 		<relationship name="sounds">
 			<destination>{8ca7b449-4851-4ce0-9471-5ab0cf004164}</destination>
