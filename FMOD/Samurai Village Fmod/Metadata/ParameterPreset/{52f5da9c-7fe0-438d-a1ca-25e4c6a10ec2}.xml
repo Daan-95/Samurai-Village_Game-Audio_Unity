@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{52f5da9c-7fe0-438d-a1ca-25e4c6a10ec2}">
+		<property name="name">
+			<value>Volume</value>
+		</property>
+		<relationship name="folder">
+			<destination>{31541da7-278c-40cc-8f83-118aea51b302}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2aa66cdd-0cd1-40b2-a41d-ccf8984e1377}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2aa66cdd-0cd1-40b2-a41d-ccf8984e1377}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+		<relationship name="automators">
+			<destination>{117b9de1-5557-4e14-b854-f55b0c0b0e5b}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{117b9de1-5557-4e14-b854-f55b0c0b0e5b}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{f8e586d5-8318-45fc-82b9-5d1c11ddc17f}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationCurve" id="{f8e586d5-8318-45fc-82b9-5d1c11ddc17f}">
+		<relationship name="parameter">
+			<destination>{6b84f16c-f954-4d0d-b94c-6b5b0bf15370}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{73182cf3-e1f6-42bd-bee8-fc931393b0c2}</destination>
+			<destination>{a8515469-f5c8-4b53-9afe-f660bf457482}</destination>
+			<destination>{cf906689-7232-42c7-a8a9-7e3c1aece8a5}</destination>
+		</relationship>
+	</object>
+	<object class="AutomationPoint" id="{73182cf3-e1f6-42bd-bee8-fc931393b0c2}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="value">
+			<value>1</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{a8515469-f5c8-4b53-9afe-f660bf457482}">
+		<property name="position">
+			<value>1</value>
+		</property>
+		<property name="value">
+			<value>0.639999986</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{cf906689-7232-42c7-a8a9-7e3c1aece8a5}">
+		<property name="position">
+			<value>2</value>
+		</property>
+		<property name="value">
+			<value>0.299999982</value>
+		</property>
+	</object>
+</objects>
