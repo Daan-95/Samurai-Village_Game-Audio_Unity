@@ -115,6 +115,9 @@
 		<property name="start">
 			<value>3</value>
 		</property>
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<property name="pitch">
 			<value>1.20000005</value>
 		</property>
@@ -171,6 +174,9 @@
 		<property name="start">
 			<value>4</value>
 		</property>
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{8ca7b449-4851-4ce0-9471-5ab0cf004164}</destination>
 			<destination>{9b00f19e-664f-48ca-a47d-96243b3c286c}</destination>
@@ -182,6 +188,9 @@
 		</relationship>
 	</object>
 	<object class="MultiSound" id="{9858cdca-69b3-4704-9839-21408859e450}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<relationship name="sounds">
 			<destination>{2bcb3764-601a-495a-bc2a-bdbb1e9662e1}</destination>
 			<destination>{c78eaa9b-04c2-4a02-8dba-9e615f891731}</destination>
