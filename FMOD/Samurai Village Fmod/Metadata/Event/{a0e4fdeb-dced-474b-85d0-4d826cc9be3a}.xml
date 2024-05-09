@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{a0e4fdeb-dced-474b-85d0-4d826cc9be3a}">
 		<property name="name">
-			<value>YAWN</value>
+			<value>Yawn</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{1aee8bd5-8b67-4113-8df0-974f06c2a342}</destination>
@@ -107,8 +107,11 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{2fde80da-7244-4209-9dfe-ac9267cfaa04}">
+		<property name="volume">
+			<value>-8</value>
+		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>yawn</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{ba963d1b-f14d-44cd-8fee-230ed6e5a720}</destination>
@@ -155,7 +158,9 @@
 	</object>
 	<object class="MixerBusEffectChain" id="{ba963d1b-f14d-44cd-8fee-230ed6e5a720}">
 		<relationship name="effects">
+			<destination>{28c61ccb-94da-4b9d-8536-545982ebcc51}</destination>
 			<destination>{15e006c0-0afa-47a9-a78e-dda68a296fff}</destination>
+			<destination>{1e97cce3-0f5d-4e90-a534-75e1dffc6c47}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{5b1e24ee-dbbe-4ad2-b81e-f9c3a2aa50b5}" />
@@ -177,5 +182,30 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{855e793c-7db3-4ea7-8d18-4dc391ab9736}" />
+	<object class="MultibandEqEffect" id="{28c61ccb-94da-4b9d-8536-545982ebcc51}">
+		<property name="filterTypeB">
+			<value>6</value>
+		</property>
+		<property name="frequencyA">
+			<value>8659.71094</value>
+		</property>
+		<property name="frequencyB">
+			<value>118.816147</value>
+		</property>
+		<property name="qualityA">
+			<value>0.840758622</value>
+		</property>
+		<property name="qualityB">
+			<value>0.120931037</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{15e006c0-0afa-47a9-a78e-dda68a296fff}" />
+	<object class="SpatialiserEffect" id="{1e97cce3-0f5d-4e90-a534-75e1dffc6c47}">
+		<property name="maximumDistance">
+			<value>5.80000019</value>
+		</property>
+		<property name="overrideRange">
+			<value>true</value>
+		</property>
+	</object>
 </objects>

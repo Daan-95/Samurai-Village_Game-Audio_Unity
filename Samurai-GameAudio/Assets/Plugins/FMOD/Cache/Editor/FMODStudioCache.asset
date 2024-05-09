@@ -108,6 +108,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 5000
+--- !u!114 &-6101304615663425618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Yawn
+  m_EditorClassIdentifier: 
+  Path: event:/Yawn
+  Guid:
+    Data1: -1595605525
+    Data2: 1196154093
+    Data3: -2108829563
+    Data4: 985581932
+  Banks:
+  - {fileID: -4731761059370437208}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3200
 --- !u!114 &-5291194731209821806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,6 +161,26 @@ MonoBehaviour:
   - RUN
   - WALK
   - CROUCH
+  Exists: 1
+--- !u!114 &-4731761059370437208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/YAWN.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Samurai Village Fmod/Build/Desktop/YAWN.bank
+  Name: YAWN
+  StudioPath: bank:/YAWN
+  lastModified: 638508594291065584
+  FileSizes:
+  - Name: Desktop
+    Value: 116160
   Exists: 1
 --- !u!114 &-2889269776058631248
 MonoBehaviour:
@@ -265,10 +312,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638508497282102939
+  lastModified: 638508573651859223
   FileSizes:
   - Name: Desktop
-    Value: 1530
+    Value: 1600
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -290,6 +337,7 @@ MonoBehaviour:
   - {fileID: -707120665156294744}
   - {fileID: 2007727277394098101}
   - {fileID: -1573995821109104458}
+  - {fileID: -4731761059370437208}
   EditorEvents:
   - {fileID: 5319711458385117281}
   - {fileID: -6402495812400300285}
@@ -297,6 +345,7 @@ MonoBehaviour:
   - {fileID: -8838077142716404355}
   - {fileID: 7475268944966595701}
   - {fileID: -6956346560283951018}
+  - {fileID: -6101304615663425618}
   EditorParameters:
   - {fileID: -5291194731209821806}
   - {fileID: -2813773595988311925}
@@ -304,7 +353,7 @@ MonoBehaviour:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638508497282102939
+  cacheTime: 638508594291065584
   cacheVersion: 131617
 --- !u!114 &2007727277394098101
 MonoBehaviour:
@@ -321,7 +370,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FLAMES.bank
   Name: FLAMES
   StudioPath: bank:/FLAMES
-  lastModified: 638508153097949189
+  lastModified: 638508594290615039
   FileSizes:
   - Name: Desktop
     Value: 658048
@@ -341,7 +390,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638508497282072948
+  lastModified: 638508573651819267
   FileSizes:
   - Name: Desktop
     Value: 2430

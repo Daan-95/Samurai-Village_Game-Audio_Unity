@@ -276,17 +276,26 @@
 		<property name="filterTypeB">
 			<value>7</value>
 		</property>
+		<property name="filterTypeC">
+			<value>9</value>
+		</property>
 		<property name="frequencyA">
 			<value>7186.53516</value>
 		</property>
 		<property name="frequencyB">
-			<value>172.521454</value>
+			<value>162.124435</value>
+		</property>
+		<property name="frequencyC">
+			<value>65.1519775</value>
 		</property>
 		<property name="qualityA">
 			<value>0.686068952</value>
 		</property>
 		<property name="gainB">
-			<value>4.13792992</value>
+			<value>4.65517426</value>
+		</property>
+		<property name="gainC">
+			<value>22.2413788</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{3f9b476c-fe1c-46be-8c6d-b59da316892e}" />

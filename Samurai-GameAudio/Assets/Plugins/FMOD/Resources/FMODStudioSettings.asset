@@ -410,6 +410,7 @@ MonoBehaviour:
   - LEEK QUEST
   - PROXIMITY
   - SOUNDTRACK
+  - YAWN
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
