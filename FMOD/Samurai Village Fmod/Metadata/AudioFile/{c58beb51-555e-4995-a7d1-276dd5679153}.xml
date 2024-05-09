@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{cb216c99-fe64-4d88-b545-270a59ea3cec}">
+	<object class="AudioFile" id="{c58beb51-555e-4995-a7d1-276dd5679153}">
 		<property name="assetPath">
-			<value>FOOTSTEPS/DIRT/DIRT-005.wav</value>
+			<value>FOOTSTEPS/DIRT/DIRT-003.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -11,7 +11,7 @@
 			<value>1</value>
 		</property>
 		<property name="length">
-			<value>0.23936507936507936</value>
+			<value>0.12907029478458049</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{6bf31780-b44f-44f2-9da0-9e8c76c21ab6}</destination>
