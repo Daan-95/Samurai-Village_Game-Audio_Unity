@@ -177,7 +177,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/YAWN.bank
   Name: YAWN
   StudioPath: bank:/YAWN
-  lastModified: 638508594291065584
+  lastModified: 638508618730681285
   FileSizes:
   - Name: Desktop
     Value: 116160
@@ -312,10 +312,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638508573651859223
+  lastModified: 638508613695282104
   FileSizes:
   - Name: Desktop
-    Value: 1600
+    Value: 1686
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -338,6 +338,7 @@ MonoBehaviour:
   - {fileID: 2007727277394098101}
   - {fileID: -1573995821109104458}
   - {fileID: -4731761059370437208}
+  - {fileID: 3769005931667205418}
   EditorEvents:
   - {fileID: 5319711458385117281}
   - {fileID: -6402495812400300285}
@@ -346,6 +347,7 @@ MonoBehaviour:
   - {fileID: 7475268944966595701}
   - {fileID: -6956346560283951018}
   - {fileID: -6101304615663425618}
+  - {fileID: 7804260239685468098}
   EditorParameters:
   - {fileID: -5291194731209821806}
   - {fileID: -2813773595988311925}
@@ -353,7 +355,7 @@ MonoBehaviour:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638508594291065584
+  cacheTime: 638508619969571920
   cacheVersion: 131617
 --- !u!114 &2007727277394098101
 MonoBehaviour:
@@ -390,10 +392,30 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638508573651819267
+  lastModified: 638508613695252118
   FileSizes:
   - Name: Desktop
     Value: 2430
+  Exists: 1
+--- !u!114 &3769005931667205418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/NPC COLLISION.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Samurai Village Fmod/Build/Desktop/NPC COLLISION.bank
+  Name: NPC COLLISION
+  StudioPath: bank:/NPC COLLISION
+  lastModified: 638508619969571920
+  FileSizes:
+  - Name: Desktop
+    Value: 35264
   Exists: 1
 --- !u!114 &5319711458385117281
 MonoBehaviour:
@@ -503,6 +525,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 17000
+--- !u!114 &7804260239685468098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MALE COLLIDE
+  m_EditorClassIdentifier: 
+  Path: event:/MALE COLLIDE
+  Guid:
+    Data1: -1729987307
+    Data2: 1184755184
+    Data3: -104647760
+    Data4: 44486671
+  Banks:
+  - {fileID: 3769005931667205418}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &8184588213283164510
 MonoBehaviour:
   m_ObjectHideFlags: 0
