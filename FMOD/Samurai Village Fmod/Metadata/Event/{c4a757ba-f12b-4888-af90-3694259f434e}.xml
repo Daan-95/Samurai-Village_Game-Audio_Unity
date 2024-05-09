@@ -5,7 +5,7 @@
 			<value>FEMALE COLLIDE</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d5078357-ba74-4c92-a190-869c33f1b3c9}</destination>
@@ -72,6 +72,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{8c8f4066-018c-49fb-a699-5501578d34e4}">
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{1a4e006e-6cb6-466d-9212-5ee203ea6a1f}</destination>
 		</relationship>
@@ -121,6 +124,7 @@
 		<relationship name="effects">
 			<destination>{17943889-1c02-4d73-ba5d-0d88a1edee42}</destination>
 			<destination>{65e43e8c-98ff-428f-84c3-c9cf6cc9af51}</destination>
+			<destination>{43a743a9-a5f1-4f41-b784-1c8c45aecdb0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{d87488ac-2d28-4734-aa51-78c4be0df6ff}" />
@@ -174,5 +178,6 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{65e43e8c-98ff-428f-84c3-c9cf6cc9af51}" />
+	<object class="SpatialiserEffect" id="{43a743a9-a5f1-4f41-b784-1c8c45aecdb0}" />
 	<object class="MixerBusFader" id="{60cbef03-6494-46dc-b9a7-7088fadf9e8b}" />
 </objects>

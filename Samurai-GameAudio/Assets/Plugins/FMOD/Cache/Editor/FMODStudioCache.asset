@@ -149,7 +149,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 3769005931667205418}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -358,7 +358,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 3769005931667205418}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -406,7 +406,7 @@ MonoBehaviour:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638508736861043711
+  cacheTime: 638508882769776200
   cacheVersion: 131617
 --- !u!114 &2007727277394098101
 MonoBehaviour:
@@ -490,10 +490,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/NPC COLLISION.bank
   Name: NPC COLLISION
   StudioPath: bank:/NPC/NPC COLLISION
-  lastModified: 638508736861043711
+  lastModified: 638508882769776200
   FileSizes:
   - Name: Desktop
-    Value: 99904
+    Value: 100480
   Exists: 1
 --- !u!114 &4287402412926830172
 MonoBehaviour:
