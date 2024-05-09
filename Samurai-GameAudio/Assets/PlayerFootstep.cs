@@ -4,106 +4,69 @@ using UnityEngine;
 
 public class PlayerFootstep : MonoBehaviour
 {
-
     private enum CURRENT_TERRAIN { GRASS, Water, DIRT, STONE, SAND, STONE_TUNNEL, WOOD };
+    private enum MOVE_STATE { RUN, WALK, CROUCH };
 
     [SerializeField]
     private CURRENT_TERRAIN currentTerrain;
+    private MOVE_STATE moveState;
 
     private FMOD.Studio.EventInstance footsteps;
 
     private void Update()
     {
+        UpdateMoveState();
         DetermineTerrain();
+        //SelectAndPlayFootstep();  // Adjust to trigger footstep sound with both terrain and move state
+    }
+
+    private void UpdateMoveState()
+    {
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            moveState = MOVE_STATE.WALK;
+        }
+        else if (Input.GetKey(KeyCode.C))
+        {
+            moveState = MOVE_STATE.CROUCH;
+        }
+        else
+        {
+            moveState = MOVE_STATE.RUN;
+        }
     }
 
     private void DetermineTerrain()
     {
         RaycastHit[] hit;
-
-        // Originally set at 10.0f, but needs to be set to 0.25 for Robot scenario due to how the level is built.
-        hit = Physics.RaycastAll(transform.position, Vector3.down, 0.25f);
+        hit = Physics.RaycastAll(transform.position, Vector3.down, 10f);
 
         foreach (RaycastHit rayhit in hit)
         {
-            if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("GRASS"))
+            switch (LayerMask.LayerToName(rayhit.transform.gameObject.layer))
             {
-                currentTerrain = CURRENT_TERRAIN.GRASS;
-            }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("Water"))
-            {
-                currentTerrain = CURRENT_TERRAIN.Water;
-            }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("DIRT"))
-            {
-                currentTerrain = CURRENT_TERRAIN.DIRT;
-                break;
-            }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("STONE"))
-            {
-                currentTerrain = CURRENT_TERRAIN.STONE;
-                break;
-            }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("SAND"))
-            {
-                currentTerrain = CURRENT_TERRAIN.SAND;
-                break;
-            }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("STONE_TUNNEL"))
-            {
-                currentTerrain = CURRENT_TERRAIN.STONE_TUNNEL;
-                break;
-            }
-            else if (rayhit.transform.gameObject.layer == LayerMask.NameToLayer("WOOD"))
-            {
-                currentTerrain = CURRENT_TERRAIN.WOOD;
-                break;
+                case "GRASS": currentTerrain = CURRENT_TERRAIN.GRASS; break;
+                case "Water": currentTerrain = CURRENT_TERRAIN.Water; break;
+                case "DIRT": currentTerrain = CURRENT_TERRAIN.DIRT; break;
+                case "STONE": currentTerrain = CURRENT_TERRAIN.STONE; break;
+                case "SAND": currentTerrain = CURRENT_TERRAIN.SAND; break;
+                case "STONE_TUNNEL": currentTerrain = CURRENT_TERRAIN.STONE_TUNNEL; break;
+                case "WOOD": currentTerrain = CURRENT_TERRAIN.WOOD; break;
             }
         }
     }
 
-    public void SelectAndPlayFootstep()
+    private void SelectAndPlayFootstep()
     {
-        switch (currentTerrain)
-        {
-
-            case CURRENT_TERRAIN.GRASS:
-                PlayFootstep(0);
-                break;
-
-            case CURRENT_TERRAIN.Water:
-                PlayFootstep(1);
-                break;
-
-            case CURRENT_TERRAIN.DIRT:
-                PlayFootstep(2);
-                break;
-
-            case CURRENT_TERRAIN.STONE:
-                PlayFootstep(3);
-                break;
-
-            case CURRENT_TERRAIN.SAND:
-                PlayFootstep(4);
-                break;
-
-            case CURRENT_TERRAIN.STONE_TUNNEL:
-                PlayFootstep(5);
-                break;
-
-            case CURRENT_TERRAIN.WOOD:
-                PlayFootstep(6);
-                break;
-
-            default:
-                PlayFootstep(0);
-                break;
-        }
+        int terrainIndex = (int)currentTerrain;
+        int moveStateIndex = (int)moveState;
+        PlayFootstep(terrainIndex, moveStateIndex);
     }
 
-    private void PlayFootstep(int terrain)
+    private void PlayFootstep(int terrain, int movestate)
     {
         footsteps = FMODUnity.RuntimeManager.CreateInstance("event:/Footsteps");
+        footsteps.setParameterByName("MoveState", movestate);
         footsteps.setParameterByName("Terrain", terrain);
         footsteps.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
         footsteps.start();

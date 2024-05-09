@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="ParameterPreset" id="{2b7647a3-0fd8-4723-ae21-db7cf167dc4e}">
 		<property name="name">
-			<value>Move State</value>
+			<value>MoveState</value>
 		</property>
 		<relationship name="folder">
 			<destination>{31541da7-278c-40cc-8f83-118aea51b302}</destination>
@@ -22,9 +22,6 @@
 			<value>RUN</value>
 			<value>WALK</value>
 			<value>CROUCH</value>
-		</property>
-		<property name="isGlobal">
-			<value>true</value>
 		</property>
 		<property name="initialValue">
 			<value>0</value>
