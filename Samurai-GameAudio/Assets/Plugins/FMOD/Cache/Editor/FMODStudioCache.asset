@@ -54,6 +54,26 @@ MonoBehaviour:
   - WALK
   - CROUCH
   Exists: 1
+--- !u!114 &-8026032079940999587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MALE IDLE.bank
+  m_EditorClassIdentifier: 
+  Path: ../FMOD/Samurai Village Fmod/Build/Desktop/MALE IDLE.bank
+  Name: MALE IDLE
+  StudioPath: bank:/NPC/IDLE/MALE IDLE
+  lastModified: 638508723114143716
+  FileSizes:
+  - Name: Desktop
+    Value: 28384
+  Exists: 1
 --- !u!114 &-6956346560283951018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +101,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 28000
---- !u!114 &-6402495812400300285
+--- !u!114 &-6541453807719086684
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,50 +111,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LEEK Quest
+  m_Name: event:/IDLE/MALE IDLE
   m_EditorClassIdentifier: 
-  Path: event:/LEEK Quest
+  Path: event:/IDLE/MALE IDLE
   Guid:
-    Data1: 272799393
-    Data2: 1218427776
-    Data3: 20576925
-    Data4: -1084784368
+    Data1: 177653613
+    Data2: 1340798361
+    Data3: 1925628089
+    Data4: -1901718528
   Banks:
-  - {fileID: 6263933039273773256}
+  - {fileID: -8026032079940999587}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-6151941601321920379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DIALOGUE/COLLISIONS/Emperor COLLIDE
+  m_EditorClassIdentifier: 
+  Path: event:/DIALOGUE/COLLISIONS/Emperor COLLIDE
+  Guid:
+    Data1: 1462030263
+    Data2: 1207298432
+    Data3: 1457668520
+    Data4: -328668447
+  Banks:
+  - {fileID: 3769005931667205418}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 5000
---- !u!114 &-6101304615663425618
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Yawn
-  m_EditorClassIdentifier: 
-  Path: event:/Yawn
-  Guid:
-    Data1: -1595605525
-    Data2: 1196154093
-    Data3: -2108829563
-    Data4: 985581932
-  Banks:
-  - {fileID: -4731761059370437208}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3200
+  Length: 2000
 --- !u!114 &-5291194731209821806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,39 +196,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/YAWN.bank
   Name: YAWN
-  StudioPath: bank:/YAWN
-  lastModified: 638508618730681285
+  StudioPath: bank:/NPC/YAWN
+  lastModified: 638508727518572235
   FileSizes:
   - Name: Desktop
     Value: 116160
   Exists: 1
---- !u!114 &-2889269776058631248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/LEEK Thanks
-  m_EditorClassIdentifier: 
-  Path: event:/LEEK Thanks
-  Guid:
-    Data1: -312842988
-    Data2: 1298571341
-    Data3: -796189764
-    Data4: 2079212139
-  Banks:
-  - {fileID: 6263933039273773256}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3000
 --- !u!114 &-2813773595988311925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,6 +270,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1407008
   Exists: 1
+--- !u!114 &-849177685615769016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DIALOGUE/QUEST/LEEK Thanks
+  m_EditorClassIdentifier: 
+  Path: event:/DIALOGUE/QUEST/LEEK Thanks
+  Guid:
+    Data1: -312842988
+    Data2: 1298571341
+    Data3: -796189764
+    Data4: 2079212139
+  Banks:
+  - {fileID: 6263933039273773256}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3000
 --- !u!114 &-707120665156294744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,11 +332,38 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638508613695282104
+  lastModified: 638508736860339051
   FileSizes:
   - Name: Desktop
-    Value: 1686
+    Value: 1944
   Exists: 1
+--- !u!114 &-138697960652036190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DIALOGUE/COLLISIONS/FEMALE COLLIDE
+  m_EditorClassIdentifier: 
+  Path: event:/DIALOGUE/COLLISIONS/FEMALE COLLIDE
+  Guid:
+    Data1: -995665990
+    Data2: 1216934187
+    Data3: -1808363345
+    Data4: 1313054501
+  Banks:
+  - {fileID: 3769005931667205418}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,15 +386,19 @@ MonoBehaviour:
   - {fileID: -1573995821109104458}
   - {fileID: -4731761059370437208}
   - {fileID: 3769005931667205418}
+  - {fileID: -8026032079940999587}
   EditorEvents:
   - {fileID: 5319711458385117281}
-  - {fileID: -6402495812400300285}
-  - {fileID: -2889269776058631248}
   - {fileID: -8838077142716404355}
   - {fileID: 7475268944966595701}
   - {fileID: -6956346560283951018}
-  - {fileID: -6101304615663425618}
-  - {fileID: 7804260239685468098}
+  - {fileID: -849177685615769016}
+  - {fileID: 3170339428062834486}
+  - {fileID: -6541453807719086684}
+  - {fileID: 6777561549920765221}
+  - {fileID: -6151941601321920379}
+  - {fileID: 4287402412926830172}
+  - {fileID: -138697960652036190}
   EditorParameters:
   - {fileID: -5291194731209821806}
   - {fileID: -2813773595988311925}
@@ -355,7 +406,7 @@ MonoBehaviour:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638508619969571920
+  cacheTime: 638508736861043711
   cacheVersion: 131617
 --- !u!114 &2007727277394098101
 MonoBehaviour:
@@ -392,11 +443,38 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638508613695252118
+  lastModified: 638508736860319042
   FileSizes:
   - Name: Desktop
     Value: 2430
   Exists: 1
+--- !u!114 &3170339428062834486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DIALOGUE/QUEST/LEEK Quest
+  m_EditorClassIdentifier: 
+  Path: event:/DIALOGUE/QUEST/LEEK Quest
+  Guid:
+    Data1: 272799393
+    Data2: 1218427776
+    Data3: 20576925
+    Data4: -1084784368
+  Banks:
+  - {fileID: 6263933039273773256}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5000
 --- !u!114 &3769005931667205418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,12 +489,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/NPC COLLISION.bank
   Name: NPC COLLISION
-  StudioPath: bank:/NPC COLLISION
-  lastModified: 638508619969571920
+  StudioPath: bank:/NPC/NPC COLLISION
+  lastModified: 638508736861043711
   FileSizes:
   - Name: Desktop
-    Value: 35264
+    Value: 99904
   Exists: 1
+--- !u!114 &4287402412926830172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Yawn
+  m_EditorClassIdentifier: 
+  Path: event:/Yawn
+  Guid:
+    Data1: -1595605525
+    Data2: 1196154093
+    Data3: -2108829563
+    Data4: 985581932
+  Banks:
+  - {fileID: -4731761059370437208}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3200
 --- !u!114 &5319711458385117281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,11 +567,38 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/LEEK QUEST.bank
   Name: LEEK QUEST
   StudioPath: bank:/LEEK QUEST
-  lastModified: 638507287330166963
+  lastModified: 638508723112584595
   FileSizes:
   - Name: Desktop
     Value: 54528
   Exists: 1
+--- !u!114 &6777561549920765221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DIALOGUE/COLLISIONS/MALE COLLIDE
+  m_EditorClassIdentifier: 
+  Path: event:/DIALOGUE/COLLISIONS/MALE COLLIDE
+  Guid:
+    Data1: -1729987307
+    Data2: 1184755184
+    Data3: -104647760
+    Data4: 44486671
+  Banks:
+  - {fileID: 3769005931667205418}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &7114710699892013746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,33 +657,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 17000
---- !u!114 &7804260239685468098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MALE COLLIDE
-  m_EditorClassIdentifier: 
-  Path: event:/MALE COLLIDE
-  Guid:
-    Data1: -1729987307
-    Data2: 1184755184
-    Data3: -104647760
-    Data4: 44486671
-  Banks:
-  - {fileID: 3769005931667205418}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
 --- !u!114 &8184588213283164510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +672,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FOOTSTEPS.bank
   Name: FOOTSTEPS
   StudioPath: bank:/FOOTSTEPS
-  lastModified: 638508497281883058
+  lastModified: 638508723112294776
   FileSizes:
   - Name: Desktop
     Value: 255584

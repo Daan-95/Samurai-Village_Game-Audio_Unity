@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="EncodableAsset" id="{cb2e5dfa-527f-45f3-bf11-fc7d4a4cc443}">
 		<property name="assetPath">
-			<value>DIALOGUE/COLLISION RESPONSES/</value>
+			<value>DIALOGUE/NPC/COLLISION RESPONSES/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{6bf31780-b44f-44f2-9da0-9e8c76c21ab6}</destination>

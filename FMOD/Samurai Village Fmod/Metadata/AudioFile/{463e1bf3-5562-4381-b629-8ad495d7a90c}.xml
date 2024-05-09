@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{463e1bf3-5562-4381-b629-8ad495d7a90c}">
 		<property name="assetPath">
-			<value>DIALOGUE/COLLISION RESPONSES/MALE/MALE COLLIDE-002.wav</value>
+			<value>DIALOGUE/NPC/COLLISION RESPONSES/MALE/MALE COLLIDE-002.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
