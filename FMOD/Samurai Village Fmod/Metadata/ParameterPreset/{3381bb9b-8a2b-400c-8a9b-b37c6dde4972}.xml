@@ -20,7 +20,7 @@
 		</property>
 		<property name="enumerationLabels">
 			<value>GRASS</value>
-			<value>Water</value>
+			<value>WATER</value>
 			<value>DIRT</value>
 			<value>STONE</value>
 			<value>SAND</value>
@@ -29,6 +29,9 @@
 		</property>
 		<property name="initialValue">
 			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
 		</property>
 	</object>
 </objects>
