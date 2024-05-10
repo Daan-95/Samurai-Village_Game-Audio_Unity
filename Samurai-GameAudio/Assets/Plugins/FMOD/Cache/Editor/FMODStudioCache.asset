@@ -175,6 +175,34 @@ MonoBehaviour:
   - Name: Desktop
     Value: 116160
   Exists: 1
+--- !u!114 &-3822823294760220058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/LAND
+  m_EditorClassIdentifier: 
+  Path: event:/LAND
+  Guid:
+    Data1: 2037339477
+    Data2: 1251552377
+    Data3: 813668026
+    Data4: -1185400406
+  Banks:
+  - {fileID: 8184588213283164510}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2792830645214612285}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2813773595988311925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,10 +309,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638509166465899681
+  lastModified: 638509379348464493
   FileSizes:
   - Name: Desktop
-    Value: 1934
+    Value: 2090
   Exists: 1
 --- !u!114 &-138697960652036190
 MonoBehaviour:
@@ -348,13 +376,16 @@ MonoBehaviour:
   - {fileID: 4287402412926830172}
   - {fileID: -138697960652036190}
   - {fileID: -8327385956748160574}
+  - {fileID: -3822823294760220058}
+  - {fileID: 3155777657457331558}
+  - {fileID: 2612690359616921027}
   EditorParameters:
   - {fileID: -2813773595988311925}
   MasterBanks:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638509166466679246
+  cacheTime: 638509379348464493
   cacheVersion: 131617
 --- !u!114 &2007727277394098101
 MonoBehaviour:
@@ -376,6 +407,64 @@ MonoBehaviour:
   - Name: Desktop
     Value: 658048
   Exists: 1
+--- !u!114 &2612690359616921027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FOLIAGE
+  m_EditorClassIdentifier: 
+  Path: event:/FOLIAGE
+  Guid:
+    Data1: -1143693694
+    Data2: 1215280477
+    Data3: 368913808
+    Data4: 149104852
+  Banks:
+  - {fileID: 8184588213283164510}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &2792830645214612285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/LAND/Terrain
+  m_EditorClassIdentifier: 
+  Name: Terrain
+  StudioPath: 
+  Min: 0
+  Max: 6
+  Default: 0
+  ID:
+    data1: 684165517
+    data2: 2142432215
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - GRASS
+  - WATER
+  - DIRT
+  - STONE
+  - SAND
+  - STONE_TUNNEL
+  - WOOD
+  Exists: 1
 --- !u!114 &2832502383013957592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,11 +480,38 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638509166465869693
+  lastModified: 638509379348434512
   FileSizes:
   - Name: Desktop
-    Value: 1926
+    Value: 2072
   Exists: 1
+--- !u!114 &3155777657457331558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/JUMP
+  m_EditorClassIdentifier: 
+  Path: event:/JUMP
+  Guid:
+    Data1: 2029766339
+    Data2: 1266580664
+    Data3: 359874447
+    Data4: 718422803
+  Banks:
+  - {fileID: 8184588213283164510}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
 --- !u!114 &3170339428062834486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,8 +735,8 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FOOTSTEPS.bank
   Name: FOOTSTEPS
   StudioPath: bank:/FOOTSTEPS
-  lastModified: 638509166465679809
+  lastModified: 638509379348214741
   FileSizes:
   - Name: Desktop
-    Value: 302848
+    Value: 524128
   Exists: 1
