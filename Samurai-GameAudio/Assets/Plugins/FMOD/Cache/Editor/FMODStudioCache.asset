@@ -54,6 +54,33 @@ MonoBehaviour:
   - WALK
   - CROUCH
   Exists: 1
+--- !u!114 &-8327385956748160574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Crouch
+  m_EditorClassIdentifier: 
+  Path: event:/Crouch
+  Guid:
+    Data1: 796059128
+    Data2: 1186172954
+    Data3: 738020489
+    Data4: -771228978
+  Banks:
+  - {fileID: 8184588213283164510}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 11000
 --- !u!114 &-8026032079940999587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,33 +101,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 28384
   Exists: 1
---- !u!114 &-6956346560283951018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SOUNDTRACK AREAS
-  m_EditorClassIdentifier: 
-  Path: event:/SOUNDTRACK AREAS
-  Guid:
-    Data1: -171410084
-    Data2: 1100551471
-    Data3: -1280577641
-    Data4: -1680691263
-  Banks:
-  - {fileID: -1573995821109104458}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 28000
 --- !u!114 &-6541453807719086684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/YAWN.bank
   Name: YAWN
   StudioPath: bank:/NPC/YAWN
-  lastModified: 638508939408290658
+  lastModified: 638509166466679246
   FileSizes:
   - Name: Desktop
     Value: 116160
@@ -214,10 +214,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/SOUNDTRACK.bank
   Name: SOUNDTRACK
   StudioPath: bank:/SOUNDTRACK
-  lastModified: 638508939405025866
+  lastModified: 638509166465999646
   FileSizes:
   - Name: Desktop
-    Value: 1407008
+    Value: 494
   Exists: 1
 --- !u!114 &-849177685615769016
 MonoBehaviour:
@@ -281,10 +281,10 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638508980133666746
+  lastModified: 638509166465899681
   FileSizes:
   - Name: Desktop
-    Value: 1944
+    Value: 1934
   Exists: 1
 --- !u!114 &-138697960652036190
 MonoBehaviour:
@@ -340,7 +340,6 @@ MonoBehaviour:
   - {fileID: 5319711458385117281}
   - {fileID: -8838077142716404355}
   - {fileID: 7475268944966595701}
-  - {fileID: -6956346560283951018}
   - {fileID: -849177685615769016}
   - {fileID: 3170339428062834486}
   - {fileID: -6541453807719086684}
@@ -348,13 +347,14 @@ MonoBehaviour:
   - {fileID: -6151941601321920379}
   - {fileID: 4287402412926830172}
   - {fileID: -138697960652036190}
+  - {fileID: -8327385956748160574}
   EditorParameters:
   - {fileID: -2813773595988311925}
   MasterBanks:
   - {fileID: 2832502383013957592}
   StringsBanks:
   - {fileID: -593145767144485223}
-  cacheTime: 638509001136251879
+  cacheTime: 638509166466679246
   cacheVersion: 131617
 --- !u!114 &2007727277394098101
 MonoBehaviour:
@@ -391,7 +391,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638508980133636776
+  lastModified: 638509166465869693
   FileSizes:
   - Name: Desktop
     Value: 1926
@@ -438,7 +438,7 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/NPC COLLISION.bank
   Name: NPC COLLISION
   StudioPath: bank:/NPC/NPC COLLISION
-  lastModified: 638508939406950152
+  lastModified: 638509166466409387
   FileSizes:
   - Name: Desktop
     Value: 100480
@@ -619,8 +619,8 @@ MonoBehaviour:
   Path: ../FMOD/Samurai Village Fmod/Build/Desktop/FOOTSTEPS.bank
   Name: FOOTSTEPS
   StudioPath: bank:/FOOTSTEPS
-  lastModified: 638509001136251879
+  lastModified: 638509166465679809
   FileSizes:
   - Name: Desktop
-    Value: 255584
+    Value: 302848
   Exists: 1
