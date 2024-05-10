@@ -17,7 +17,7 @@ public class PlayerFootstep : MonoBehaviour
     {
         UpdateMoveState();
         DetermineTerrain();
-        //SelectAndPlayFootstep();  // Adjust to trigger footstep sound with both terrain and move state
+       
     }
 
     private void UpdateMoveState()
@@ -39,19 +39,38 @@ public class PlayerFootstep : MonoBehaviour
     private void DetermineTerrain()
     {
         RaycastHit[] hit;
-        hit = Physics.RaycastAll(transform.position, Vector3.down, 10f);
+        hit = Physics.RaycastAll(transform.position, Vector3.down, 0.25f);
 
         foreach (RaycastHit rayhit in hit)
         {
             switch (LayerMask.LayerToName(rayhit.transform.gameObject.layer))
             {
-                case "GRASS": currentTerrain = CURRENT_TERRAIN.GRASS; break;
-                case "Water": currentTerrain = CURRENT_TERRAIN.Water; break;
-                case "DIRT": currentTerrain = CURRENT_TERRAIN.DIRT; break;
-                case "STONE": currentTerrain = CURRENT_TERRAIN.STONE; break;
-                case "SAND": currentTerrain = CURRENT_TERRAIN.SAND; break;
-                case "STONE_TUNNEL": currentTerrain = CURRENT_TERRAIN.STONE_TUNNEL; break;
-                case "WOOD": currentTerrain = CURRENT_TERRAIN.WOOD; break;
+                case "GRASS": 
+                    currentTerrain = CURRENT_TERRAIN.GRASS; 
+                    break;
+
+                case "Water": 
+                    currentTerrain = CURRENT_TERRAIN.Water; 
+                    break;
+
+                case "DIRT": 
+                    currentTerrain = CURRENT_TERRAIN.DIRT; 
+                    break;
+
+                case "STONE": 
+                    currentTerrain = CURRENT_TERRAIN.STONE; 
+                    break;
+
+                case "SAND": 
+                    currentTerrain = CURRENT_TERRAIN.SAND; 
+                    break;
+
+                case "STONE_TUNNEL":
+                    currentTerrain = CURRENT_TERRAIN.STONE_TUNNEL;
+                    break;
+                case "WOOD": 
+                    currentTerrain = CURRENT_TERRAIN.WOOD;
+                    break;
             }
         }
     }
